@@ -9,7 +9,7 @@ body, html {
 
 /* 2. 背景圖設定 */
 body {
-    background: url('你的背景圖網址') no-repeat center center fixed;
+    background: url('https://i.pinimg.com/736x/b4/2e/50/b42e50d88af51df3efeccd8e105d6e55.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
