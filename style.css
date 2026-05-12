@@ -1,0 +1,63 @@
+/* 1. 移除預設邊距並設定全螢幕背景 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* 這裡替換成你的背景圖網址 */
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 2. 主容器：佔滿全螢幕並處理彈性佈局 */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    /* 加入半透明遮罩，讓文字更清楚 */
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+/* 3. 處理頂部安全區域（避開瀏海） */
+.safe-header {
+    padding-top: env(safe-area-inset-top);
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* 磨砂玻璃效果，Taskade 常見風格 */
+}
+
+/* 4. 內容區域 */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* 5. 處理底部安全區域（避開手勢條） */
+.safe-footer {
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px; /* 基本間距 */
+}
