@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Taskade Style Fullscreen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="safe-header">
+            <h1>我的工作空間</h1>
+        </header>
+        
+        <main class="content">
+            <p>開始建立你的第一個任務...</p>
+        </main>
+
+        <footer class="safe-footer">
+            <button class="add-btn">+ 新增任務</button>
+        </footer>
+    </div>
+</body>
+</html>
